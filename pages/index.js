@@ -18,14 +18,14 @@ export default function Home() {
 
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/scan" className={styles.card}>
+            <h2>Scan a qr code&rarr;</h2>
+            <p>Scan a qr code with your camera</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="/generate" className={styles.card}>
+            <h2> Generate a qr code&rarr;</h2>
+            <p> Generate a qr code with text or a link</p>
           </a>
 
          
