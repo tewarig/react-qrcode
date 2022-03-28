@@ -1,6 +1,10 @@
 .container {
   padding: 0 2rem;
 }
+.containerColumn{
+  display: flex;
+  flex-direction: column;
+}
 
 .main {
   min-height: 100vh;
