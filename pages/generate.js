@@ -7,6 +7,8 @@ function Generate() {
 
   return (
     <div className={styles.main}>
+          <div className={styles.card}>Generate QR</div>
+
       {qrCodeValue != "" && (
         <QRCode value={qrCodeValue} className={styles.containerColumn} />
       )}
@@ -16,7 +18,6 @@ function Generate() {
           setQrCodeValue(e.target.value);
         }}
       />
-      <div className={styles.card}>Generate &rarr;</div>
     </div>
   );
 }
