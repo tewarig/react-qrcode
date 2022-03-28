@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -12,25 +13,21 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to Qr Labs
-        </h1>
-
+        <h1 className={styles.title}>Welcome to Qr Labs</h1>
+        <hr height="1px" width="40%"/>
 
         <div className={styles.grid}>
-          <a href="/scan" className={styles.card}>
-            <h2>Scan a qr code&rarr;</h2>
-            <p>Scan a qr code with your camera</p>
-          </a>
-
-          <a href="/generate" className={styles.card}>
-            <h2> Generate a qr code&rarr;</h2>
-            <p> Generate a qr code with text or a link</p>
-          </a>
-
-         
-
-           
+          <Link href="/scan" className={styles.card}>
+            <a>
+              <h2>Scan a qr code&rarr;</h2>
+            </a>
+          </Link>
+          {" "}
+          <Link href="/generate" className={styles.card}>
+            <a>
+              <h2> Generate a qr code&rarr;</h2>
+            </a>
+          </Link>
         </div>
       </main>
 
@@ -40,12 +37,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
